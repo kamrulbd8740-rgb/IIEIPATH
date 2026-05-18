@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PathLab Pro — Employee Pathology Benefit System</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.8.0/Recharts.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <style>
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#f8fafc;}
+    /* Tailwind colour extensions */
+    .bg-rose-50{background:#fff1f2}.text-rose-700{color:#be123c}.border-rose-200{border-color:#fecdd3}
+    .bg-blue-50{background:#eff6ff}.text-blue-600{color:#2563eb}.text-blue-700{color:#1d4ed8}.border-blue-200{border-color:#bfdbfe}
+    .bg-emerald-50{background:#ecfdf5}.text-emerald-600{color:#059669}.text-emerald-700{color:#047857}.border-emerald-200{border-color:#a7f3d0}
+    .bg-emerald-500{background:#10b981}.bg-emerald-600{background:#059669}.hover\:bg-emerald-700:hover{background:#047857}
+    .bg-amber-50{background:#fffbeb}.text-amber-500{color:#f59e0b}.text-amber-600{color:#d97706}.text-amber-700{color:#b45309}.border-amber-200{border-color:#fde68a}
+    .bg-amber-500{background:#f59e0b}.hover\:bg-amber-600:hover{background:#d97706}
+    .bg-violet-50{background:#f5f3ff}.text-violet-600{color:#7c3aed}.text-violet-700{color:#6d28d9}.border-violet-200{border-color:#ddd6fe}
+    .bg-teal-50{background:#f0fdfa}.text-teal-600{color:#0d9488}.border-teal-200{border-color:#99f6e4}
+    .bg-orange-50{background:#fff7ed}.text-orange-500{color:#f97316}.text-orange-600{color:#ea580c}.text-orange-700{color:#c2410c}.border-orange-200{border-color:#fed7aa}
+    .bg-red-50{background:#fef2f2}.text-red-500{color:#ef4444}.text-red-600{color:#dc2626}.text-red-700{color:#b91c1c}.border-red-200{border-color:#fecaca}
+    .bg-red-600{background:#dc2626}.hover\:bg-red-700:hover{background:#b91c1c}
+    .bg-slate-900{background:#0f172a}.hover\:bg-slate-800:hover{background:#1e293b}.bg-slate-300{background:#cbd5e1}
+    .from-slate-900{--tw-gradient-from:#0f172a}.to-slate-700{--tw-gradient-to:#334155}
+    .from-slate-50{--tw-gradient-from:#f8fafc}.to-blue-50{--tw-gradient-to:#eff6ff}
+    .bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-from),var(--tw-gradient-to))}
+    input[type=checkbox]{accent-color:#0f172a}
+    @media print{
+      body>*{display:none!important}
+      #__plp_ov__{display:flex!important;position:fixed!important;inset:0!important;background:#fff!important}
+      #__plp_tb__{display:none!important}
+      #__plp_sc__{overflow:visible!important;background:#fff!important;padding:0!important}
+      #__plp_pg__{box-shadow:none!important;border-radius:0!important;width:100%!important}
+      @page{size:A4;margin:15mm}
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // PathLab Pro - Full Source
+    // See artifact source in Claude conversation for full JSX component
+    // Paste the full React component code here between these script tags
+    const { useState, useEffect, useMemo, useRef } = React;
+    const { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } = Recharts;
+
+    const App = () => (
+      <div style={{display:'flex',alignItems:'center',justifyContent:'center',minHeight:'100vh',flexDirection:'column',gap:'16px',fontFamily:'Segoe UI,Arial,sans-serif'}}>
+        <div style={{fontSize:'48px'}}>⚗️</div>
+        <h1 style={{fontSize:'28px',fontWeight:800,color:'#0f172a',margin:0}}>PathLab Pro</h1>
+        <p style={{color:'#64748b',margin:0}}>Paste the full artifact JSX source above this line to run the app.</p>
+        <a href="https://claude.ai" style={{color:'#3b82f6',fontSize:'14px'}}>Get source from Claude conversation</a>
+      </div>
+    );
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>
